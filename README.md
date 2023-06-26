@@ -17,7 +17,7 @@ A high level view of the virtual infrastructure which will be created by the ter
  * All the network related resources (i.e. VPC, NAT Gateway, Internet Gateway, private subnets, public subnets etc.) were created using the following VPC module(version 5.0.0): [AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
  * Traffic from the internet flows in to the Elastic IP address, which is dynamically created when you deploy an internet-facing Application Load Balancer.
  * The ASG creates instances in the target group where ALB forwards HTTP traffic
- * The EC2 instances (which are provisioned by the ASG) run a web server which is configured by providing the script [web-server-install.sh](/terraform_config_files/scripts/web-server-install.sh) via the user_data attribute of the [launch template](/terraform_config_files/launch_template.tf)  
+ * The EC2 instances (which are provisioned by the ASG) run a web server which is configured by providing the script [web-server-install.sh](/terraform_config_files/scripts/web-server-install.sh) via the ```user_data``` attribute of the [launch template](/terraform_config_files/launch_template.tf)  
 
 
 # Prerequisites for working with the repo<a name="prerequisites"></a>
