@@ -1,6 +1,6 @@
 # What's inside this repo<a name="repo_content"></a>
 
-The goal of the terraform configuration scripts included in this folder, is to create an Application Load Balancer (ALB) on AWS, as well as an Autoscaling Group (ASG). The ASG integrates with the ALB in the sense that the EC2 instances launched by the ASG are created within the target group of the ALB. The load balancer listener binds the target group and the ALB together. The relations of the entities described above, can be perceived as follows: ALB <--> Listener <--> Target Group <--> ASG
+The goal of the terraform configuration scripts included in this folder, is to create an Application Load Balancer (ALB) on AWS, as well as an Autoscaling Group (ASG). The ASG integrates with the ALB in the sense that the EC2 instances launched by the ASG, are created within the target group of the ALB. The load balancer listener binds the target group and the ALB together. The relations of the entities described above, can be perceived as follows: ALB <--> Listener <--> Target Group <--> ASG
 
 # Architecture<a name="architecture"></a> 
 
